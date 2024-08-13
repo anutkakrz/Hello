@@ -5,5 +5,5 @@ db.users.updateMany(
         is_blocked: { $ne: true },
         balance: { $gt: 0 }
     },
-    { $mul: { balance: .155 } }
+    { $mul: { balance: 1.155 } }
 )
